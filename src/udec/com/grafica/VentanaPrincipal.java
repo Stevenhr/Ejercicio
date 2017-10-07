@@ -5,10 +5,14 @@ import javax.swing.*;
 public class VentanaPrincipal extends JFrame {
 	
 	RegistroPersonaPanel obj_panel_registro;
+	TablaPersonaPanel obj_paneltablapersona;
 	
 	public VentanaPrincipal() {
 		super("Mi ventana principal");
 		inicio();
+		componentes();
+		pack();
+		setLocationRelativeTo(null);
 	}
 	
 	public VentanaPrincipal inicio() {
@@ -24,7 +28,12 @@ public class VentanaPrincipal extends JFrame {
 	private void componentes() {
 		
 		obj_panel_registro = new RegistroPersonaPanel();
-		add(obj_panel_registro, BorderLayout.WEST);
+		add(obj_panel_registro, BorderLayout.NORTH);
+		
+		obj_paneltablapersona = new TablaPersonaPanel();
+		add(obj_paneltablapersona, BorderLayout.CENTER);
+		
+		
 		
 	}
 	
