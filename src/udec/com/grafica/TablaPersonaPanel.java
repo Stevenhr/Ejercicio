@@ -10,4 +10,6 @@ public class TablaPersonaPanel extends JPanel {
 		Border borde1 = BorderFactory.createTitledBorder("Contenido Tabla Persona");
 		setBorder (borde1);
 	}
+	
+	
 }

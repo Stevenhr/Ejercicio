@@ -33,8 +33,6 @@ public class VentanaPrincipal extends JFrame {
 		obj_paneltablapersona = new TablaPersonaPanel();
 		add(obj_paneltablapersona, BorderLayout.CENTER);
 		
-		
-		
 	}
 	
 }
