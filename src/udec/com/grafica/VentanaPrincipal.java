@@ -3,7 +3,9 @@ import java.awt.*;
 import javax.swing.*;
 
 public class VentanaPrincipal extends JFrame {
-
+	
+	RegistroPersonaPanel obj_panel_registro;
+	
 	public VentanaPrincipal() {
 		super("Mi ventana principal");
 		inicio();
@@ -19,6 +21,11 @@ public class VentanaPrincipal extends JFrame {
 		return this;
 	}
 	
-	
+	private void componentes() {
+		
+		obj_panel_registro = new RegistroPersonaPanel();
+		add(obj_panel_registro, BorderLayout.WEST);
+		
+	}
 	
 }
